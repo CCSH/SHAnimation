@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C8220462122E2F40071ECE3 /* SHAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C8220432122E2F40071ECE3 /* SHAnimation.m */; };
 		5C961B3E2043B01C004BB8E8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C961B3D2043B01C004BB8E8 /* AppDelegate.m */; };
 		5C961B412043B01D004BB8E8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C961B402043B01D004BB8E8 /* ViewController.m */; };
 		5C961B442043B01D004BB8E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C961B422043B01D004BB8E8 /* Main.storyboard */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5C8220422122E2F40071ECE3 /* SHAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHAnimation.h; sourceTree = "<group>"; };
+		5C8220432122E2F40071ECE3 /* SHAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHAnimation.m; sourceTree = "<group>"; };
 		5C961B392043B01C004BB8E8 /* SHAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SHAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C961B3C2043B01C004BB8E8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5C961B3D2043B01C004BB8E8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -39,6 +42,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C8220402122E2F40071ECE3 /* SHAnimation(动画效果) */ = {
+			isa = PBXGroup;
+			children = (
+				5C8220422122E2F40071ECE3 /* SHAnimation.h */,
+				5C8220432122E2F40071ECE3 /* SHAnimation.m */,
+			);
+			path = "SHAnimation(动画效果)";
+			sourceTree = "<group>";
+		};
 		5C961B302043B01C004BB8E8 = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +70,7 @@
 		5C961B3B2043B01C004BB8E8 /* SHAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				5C8220402122E2F40071ECE3 /* SHAnimation(动画效果) */,
 				5C961B3C2043B01C004BB8E8 /* AppDelegate.h */,
 				5C961B3D2043B01C004BB8E8 /* AppDelegate.m */,
 				5C961B3F2043B01D004BB8E8 /* ViewController.h */,
@@ -143,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C961B412043B01D004BB8E8 /* ViewController.m in Sources */,
+				5C8220462122E2F40071ECE3 /* SHAnimation.m in Sources */,
 				5C961B4C2043B01D004BB8E8 /* main.m in Sources */,
 				5C961B3E2043B01C004BB8E8 /* AppDelegate.m in Sources */,
 			);

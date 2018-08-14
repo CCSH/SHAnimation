@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "SHAnimation.h"
 
 @interface ViewController ()
 
@@ -25,9 +26,20 @@
     self.btn.frame = CGRectMake(0, 0, 200, 50);
     self.btn.center = self.view.center;
     self.btn.backgroundColor = [UIColor orangeColor];
-    [self.btn setTitle:@"登 录" forState:0];
+    [self.btn setTitle:@"抖 动" forState:0];
+    
+    [self.btn addTarget:self action:@selector(btnAction) forControlEvents:UIControlEventTouchUpInside];
     
     [self.view addSubview:self.btn];
+}
+
+- (void)btnAction{
+    
+    [SHAnimation addAnimationShakeWithView:self.btn];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [SHAnimation removeAnimationShakeWithView:self.btn];
+    });
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
